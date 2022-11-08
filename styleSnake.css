@@ -1,0 +1,193 @@
+body {
+	background-image: url("rainforrestLeaves.png");
+	text-align: center;
+}
+
+.game {
+	width: 100%;
+}
+
+/* board Gameplay Level Restart style */
+.col-sm-4 {
+	color: #00fea5;
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	padding: 1vw;
+	display: inline-block;
+}
+
+
+.col-sm-4 > select {
+	border-radius: 0.5rem;
+	border: solid 0.25rem #00f05f;
+	color: #00fea5;
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #009451;
+	display: inline-block;
+	cursor: pointer;
+	
+	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+.col-sm-4 > button {
+	border-radius: 0.5rem;
+	border: solid 0.25rem #00f05f;
+	color: #00fea5;
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #009451;
+	display: inline-block;
+	cursor: pointer;
+
+	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);	
+}
+
+.info {
+	font-size: 0.7rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #fff;
+}
+
+/* Gameboard style */
+#gameContainer {
+/* width and height of .gameBoardPixel should 1/32 of the width and height of #gameContainer,
+because it is used in calculation in the jscript.js file */
+	cursor: none;
+	width: 32vw;
+	height: 32vw;
+	margin: 1vw auto;
+	background-color: #009451;
+	border: solid 0.5rem #00f05f;
+	border-radius: 0.5rem;
+
+	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+.gameBoardPixel {
+/* width and height of .gameBoardPixel should 1/32 of the width and height of #gameContainer,
+because it is used in calculation in the jscript.js file */
+	width: 1vw;
+	height: 1vw;
+	border-radius: 0.5rem;
+	float: left;
+}
+
+/* Snake style */
+.snakeBodyPixel {
+	background-color: #00fea5;
+	box-shadow: 0 0 0.25rem #00fea5;
+}
+
+/* Food style */
+.food {
+	background-color: #fd6401;
+}
+
+/* Score style */
+#scoreContainer {
+	width: 32vw;
+	display: flex;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.scoreBoard {
+	border-radius: 0.5rem;
+	border: solid 0.25rem #00f05f;
+	color: #00fea5;
+	font-size: 1rem;
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #009451;
+	display: inline-block;
+
+	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+}
+
+/* Game Over display style */
+.displayGameOver {
+	display: none;
+	width: 20%;	/* okay */
+	background-color: #00f05f;
+	position: absolute;
+	margin-top: 13vw;
+	margin-left: 5vw;
+	
+	padding-top: 1vw;
+	padding-bottom: 1vw;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	text-align: center;
+	border-radius: 0.25rem;
+	color: white;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 2vw;
+}
+
+/* Buttons hide #onScreenControllers on desktop  */
+#onScreenControllers {
+	display: none;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1200px) {
+
+#gameContainer {
+	width: 64vw;
+	height: 64vw;
+}
+
+.gameBoardPixel {
+	width: 2vw;
+    height: 2vw;
+}
+
+#scoreContainer {
+	width: 64vw;
+}
+
+#onScreenControllers {
+	width: 64vw;
+	height: 60vh;
+	margin: 2vw auto;	
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#onScreenControllers > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#onScreenControllers button {
+	border-radius: 1vw;
+	border: solid 0.5vw #00f05f;
+	color: #00fea5;
+	font-size: 6vw;
+	font-family: Verdana, Helvetica, sans-serif;
+	background-color: #009451;
+	margin: 8vw;
+}
+
+#onScreenControllers button:focus {
+	outline: none;
+}
+
+#onScreenControllers button:active {
+	background-color: #00fea5;
+}
+
+.info {
+	display: none;
+}
+}
+
