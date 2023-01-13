@@ -6,9 +6,11 @@
  Save the files in a folder and open the file "index.html" in your browser.
 
  Have fun
-
- ![Preview](Images/PreviewSnake.png)
+ 
+Preview
+![Preview](Images/PreviewSnake.png)
 
  Mobile View
- ![Preview](Images/Snake_Mobile.PNG)
+
+![Preview](Images/Snake_Mobile.PNG)
 
