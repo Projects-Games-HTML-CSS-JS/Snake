@@ -1,5 +1,5 @@
 body {
-	background-image: url("rainforrestLeaves.png");
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	text-align: center;
 }
 
@@ -9,9 +9,6 @@ body {
 
 /* board Gameplay Level Restart style */
 .col-sm-4 {
-	color: #00fea5;
-	font-size: 1rem;
-	font-family: Verdana, Helvetica, sans-serif;
 	padding: 1vw;
 	display: inline-block;
 }
@@ -19,11 +16,12 @@ body {
 
 .col-sm-4 > select {
 	border-radius: 0.5rem;
-	border: solid 0.25rem #00f05f;
-	color: #00fea5;
+	border: solid 0.20rem aliceblue;
+	color: rgb(245, 227, 239);
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	font-size: 1rem;
+	font-weight: ;
 	font-family: Verdana, Helvetica, sans-serif;
-	background-color: #009451;
 	display: inline-block;
 	cursor: pointer;
 	
@@ -32,13 +30,18 @@ body {
 	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 }
 
+.col-sm-4 option {
+	color: rgb(203, 21, 170);
+	background-color: aliceblue;
+}
+
 .col-sm-4 > button {
 	border-radius: 0.5rem;
-	border: solid 0.25rem #00f05f;
-	color: #00fea5;
+	border: solid 0.20rem aliceblue;
+	color: rgb(245, 227, 239);
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	font-size: 1rem;
 	font-family: Verdana, Helvetica, sans-serif;
-	background-color: #009451;
 	display: inline-block;
 	cursor: pointer;
 
@@ -61,15 +64,16 @@ because it is used in calculation in the jscript.js file */
 	width: 32vw;
 	height: 32vw;
 	margin: 1vw auto;
-	background-color: #009451;
-	border: solid 0.5rem #00f05f;
-	border-radius: 0.5rem;
-
-	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
-	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
+	background-image: radial-gradient(circle, #da7c69, #7b7199);
+	/* From https://css.glass */
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(3.4px);
+	-webkit-backdrop-filter: blur(3.4px);
+	border: 7px solid rgba(255, 255, 255, 0.24);
 }
 
+  
 .gameBoardPixel {
 /* width and height of .gameBoardPixel should 1/32 of the width and height of #gameContainer,
 because it is used in calculation in the jscript.js file */
@@ -81,14 +85,45 @@ because it is used in calculation in the jscript.js file */
 
 /* Snake style */
 .snakeBodyPixel {
-	background-color: #00fea5;
+	background-image: radial-gradient(circle, #85da69, #efff14);
 	box-shadow: 0 0 0.25rem #00fea5;
 }
 
 /* Food style */
 .food {
-	background-color: #fd6401;
-}
+	transition: 0.3s ease-in-out;
+	-webkit-animation: glowing 3000ms infinite;
+	-moz-animation: glowing 3000ms infinite;
+	-o-animation: glowing 3000ms infinite;
+	animation: glowing 3000ms infinite;
+  }
+  
+  @-webkit-keyframes glowing {
+	0% { background-color: rgb(232, 229, 223); -webkit-box-shadow: 0 0 3px rgb(232, 229, 223); }
+	50% { background-color: #fff; -webkit-box-shadow: 0 0 40px #fff; }
+	100% { background-color: aliceblue; -webkit-box-shadow: 0 0 3px aliceblue; }
+  }
+  
+  @-moz-keyframes glowing {
+	0% { background-color: rgb(232, 229, 223); -moz-box-shadow: 0 0 3px rgb(232, 229, 223); }
+	50% { background-color: #fff; -moz-box-shadow: 0 0 40px #fff; }
+	100% { background-color: aliceblue; -moz-box-shadow: 0 0 3px aliceblue; }
+  }
+  
+  @-o-keyframes glowing {
+	0% { background-color: rgb(232, 229, 223); box-shadow: 0 0 3px rgb(232, 229, 223); }
+	50% { background-color: #fff; box-shadow: 0 0 40px #fff; }
+	100% { background-color: aliceblue; box-shadow: 0 0 3px aliceblue; }
+  }
+  
+  @keyframes glowing {
+	0% { background-color: rgb(232, 229, 223); box-shadow: 0 0 3px rgb(232, 229, 223); }
+	50% { background-color: #fff; box-shadow: 0 0 40px #fff; }
+	100% { background-color: aliceblue; box-shadow: 0 0 3px aliceblue; }
+  }
+	  
+
+
 
 /* Score style */
 #scoreContainer {
@@ -100,11 +135,11 @@ because it is used in calculation in the jscript.js file */
 
 .scoreBoard {
 	border-radius: 0.5rem;
-	border: solid 0.25rem #00f05f;
-	color: #00fea5;
+	border: solid 0.20rem aliceblue;
+	color: rgb(245, 227, 239);
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	font-size: 1rem;
 	font-family: Verdana, Helvetica, sans-serif;
-	background-color: #009451;
 	display: inline-block;
 
 	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
@@ -116,10 +151,10 @@ because it is used in calculation in the jscript.js file */
 .displayGameOver {
 	display: none;
 	width: 20%;	/* okay */
-	background-color: #00f05f;
+	background-color: aliceblue;
 	position: absolute;
 	margin-top: 13vw;
-	margin-left: 5vw;
+	margin-left: 12vw;
 	
 	padding-top: 1vw;
 	padding-bottom: 1vw;
@@ -127,10 +162,42 @@ because it is used in calculation in the jscript.js file */
 	padding-right: 1vw;
 	text-align: center;
 	border-radius: 0.25rem;
-	color: white;
+	color: rgba(255, 0, 0, 0.852);
 	font-family: Verdana, Helvetica, sans-serif;
 	font-size: 2vw;
 }
+
+
+
+#header {
+	font-size: 5vw;
+}
+
+#link {
+	font-size: 1vw;
+}
+
+/* for Twitter icon */
+.fa {
+	padding: 20px;
+	font-size: 1vw;
+	text-decoration: none;
+	margin: 5px 2px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+  }
+
+span {
+	color: aliceblue;
+  }
+
+
 
 /* Buttons hide #onScreenControllers on desktop  */
 #onScreenControllers {
@@ -139,6 +206,34 @@ because it is used in calculation in the jscript.js file */
 
 /* MOBILE */
 @media only screen and (max-width: 1200px) {
+
+#header {
+	font-size: 10vw;
+}
+
+#link {
+	font-size: 3vw;
+}
+
+/* for Twitter icon */
+.fa {
+	padding: 20px;
+	font-size: 3vw;
+	text-decoration: none;
+	margin: 5px 2px;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+  }
+
+span {
+	color: aliceblue;
+  }
 
 #gameContainer {
 	width: 64vw;
@@ -156,7 +251,7 @@ because it is used in calculation in the jscript.js file */
 
 #onScreenControllers {
 	width: 64vw;
-	height: 60vh;
+	height: 25vh;
 	margin: 2vw auto;	
     display: flex;
     justify-content: space-evenly;
@@ -170,11 +265,11 @@ because it is used in calculation in the jscript.js file */
 
 #onScreenControllers button {
 	border-radius: 1vw;
-	border: solid 0.5vw #00f05f;
-	color: #00fea5;
+	border: solid 0.5vw rgb(194, 225, 252);
+	color: aliceblue;
 	font-size: 6vw;
 	font-family: Verdana, Helvetica, sans-serif;
-	background-color: #009451;
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	margin: 8vw;
 }
 
@@ -183,11 +278,10 @@ because it is used in calculation in the jscript.js file */
 }
 
 #onScreenControllers button:active {
-	background-color: #00fea5;
+	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 }
 
 .info {
 	display: none;
 }
 }
-

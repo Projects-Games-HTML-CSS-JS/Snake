@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="google" content="notranslate">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="styleSnake.css">
 		<title>Snake</title>
 	</head>
@@ -11,6 +12,9 @@
 		<div class="game">
 			<div class="container-fluid">
 				<div class="row">
+					<div class="col-sm-12">    
+						<span id="header">Snake</span><a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span id="link">@bella_mrx</span></a>
+					</div>
 					<div class="col-sm-4">
 						<select name="inputList" onchange="location = this.value;">
 							<option value="index.html">Normal</option>
@@ -29,7 +33,7 @@
 						<p class="info">Use arrow keys to play.</p>
 					</div>
 					<!-- #gameContainer is the main game board-->
-					<div id="gameContainer">
+					<div id="gameContainer" class="box">
 						<p class="displayGameOver"></p>
 					</div>
 					<!-- #scoreContainer contains the scores  -->

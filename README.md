@@ -7,4 +7,8 @@
 
  Have fun
 
- ![Preview](SnakePreview.jpg)
+ ![Preview](Images/PreviewSnake.png)
+
+ Mobile View
+ ![Preview](Images/Snake_Mobile.PNG)
+
