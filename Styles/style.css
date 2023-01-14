@@ -7,6 +7,44 @@ body {
 	width: 100%;
 }
 
+
+h1 {
+	font-size: 3vw;
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #fff;
+}
+
+#link {
+	font-size: 2vw;
+}
+
+/* for Twitter, GitHub icon */
+.fa {
+	padding-left: 20px;
+	font-size: 2vw;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	text-decoration: none;
+}
+
+.fa-twitter {
+	color: #55ACEE;
+}
+
+.fa-github {
+	color: #000000;
+}
+
+span {
+	color: aliceblue;
+}
+
+
+
 /* board Gameplay Level Restart style */
 .col-sm-4 {
 	padding: 1vw;
@@ -168,36 +206,6 @@ because it is used in calculation in the jscript.js file */
 
 
 
-#header {
-	font-size: 5vw;
-}
-
-#link {
-	font-size: 1vw;
-}
-
-/* for Twitter icon */
-.fa {
-	padding: 20px;
-	font-size: 1vw;
-	text-decoration: none;
-	margin: 5px 2px;
-  }
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-twitter {
-	color: #55ACEE;
-  }
-
-span {
-	color: aliceblue;
-  }
-
-
-
 /* Buttons hide #onScreenControllers on desktop  */
 #onScreenControllers {
 	display: none;
@@ -206,33 +214,22 @@ span {
 /* MOBILE */
 @media only screen and (max-width: 1200px) {
 
-#header {
-	font-size: 10vw;
+h1 {
+	font-size: 5vw;
+	font-family: Verdana, Helvetica, sans-serif;
+	color: #fff;
 }
-
+	
 #link {
 	font-size: 3vw;
 }
-
-/* for Twitter icon */
+	
+/* for Twitter, GitHub icon */
 .fa {
-	padding: 20px;
+	padding-left: 10px;
 	font-size: 3vw;
-	text-decoration: none;
 	margin: 5px 2px;
-  }
-
-.fa:hover {
-    opacity: 0.7;
 }
-
-.fa-twitter {
-	color: #55ACEE;
-  }
-
-span {
-	color: aliceblue;
-  }
 
 #gameContainer {
 	width: 64vw;
