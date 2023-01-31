@@ -14,7 +14,7 @@ h1 {
 	color: #fff;
 }
 
-#link {
+.link {
 	font-size: 2vw;
 }
 
@@ -24,6 +24,7 @@ h1 {
 	font-size: 2vw;
 	text-decoration: none;
 	margin: 5px 2px;
+	text-shadow: 2px 2px 4px #000;
 }
 
 .fa:hover {
