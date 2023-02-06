@@ -7,7 +7,7 @@
 
  Have fun
  
- Video on [YouTube](https://www.youtube.com/watch?v=Fp4tkQ9-3tE)
+ Video on [YouTube](https://youtu.be/fW-L1zS_3qs)
 
 Preview
 ![Preview](Images/PreviewSnake.png)
