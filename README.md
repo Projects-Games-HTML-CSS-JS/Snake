@@ -14,5 +14,5 @@ Preview
 
  Mobile View
 
-![Preview](Images/Snake_Mobile.PNG)
+![Preview](Images/PreviewMobileSnake.PNG)
 

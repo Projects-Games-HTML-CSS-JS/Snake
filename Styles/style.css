@@ -1,6 +1,7 @@
 body {
 	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	text-align: center;
+	text-shadow: 2px 2px 4px #000;
 }
 
 .game {
@@ -268,6 +269,7 @@ h1 {
 	font-family: Verdana, Helvetica, sans-serif;
 	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
 	margin: 8vw;
+	box-shadow: 5px 10px 18px #000;
 }
 
 #onScreenControllers button:focus {
