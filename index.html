@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="google" content="notranslate">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="Styles/style.css">
-		<title>Snake</title>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="google" content="notranslate">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="Styles/style.css">
+	  <title>Snake</title>
 	</head>
 	<body>
-		<div class="game">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-12">    
-						<h1 id="header">Snake</h1>
-						<a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span class="link">@bella_mrx</span></a>
-						<a href="https://github.com/BellaMrx" class="fa fa-github"><span class="link">BellaMrx</span></a>
-					</div>
-					<div class="col-sm-4">
-						<select name="inputList" onchange="location = this.value;">
-							<option value="index.html">Normal</option>
-							<option value="SnakeFast.html">Fast</option>
-							<option value="SnakeSlow.html">Slow</option>
-							<option value="SnakeLSup.html">LevelUp/SpeedUp</option>
-						</select>
-					</div>
-					<div class="col-sm-4">
-						<button onClick="window.location.reload()">Replay</button>
-					</div>
-					<div class="col-sm-4">
-						<div class="scoreBoard">Highscore: <span id="highscoreDisplay">0</span></div>
-					</div>
-					<div class="col-sm-12">
-						<p class="info">Use arrow keys to play.</p>
-					</div>
-					<!-- #gameContainer is the main game board-->
-					<div id="gameContainer" class="box">
-						<p class="displayGameOver"></p>
-					</div>
-					<!-- #scoreContainer contains the scores  -->
-					<div id="scoreContainer">
-						<div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
-						<div class="scoreBoard">Level: <span id="reachedLevel">1</span></div>
-					</div>
-					<!-- #onScreenControllers buttons for mobile screens -->
-					<div id="onScreenControllers">
-						<button id="leftButton">&#11164;</button>
-					<div>
-						<button id="upButton">&#11165;</button>
-						<button id="downButton">&#11167;</button>
-					</div>
-						<button id="rightButton">&#11166;</button>
-					</div>
-				</div>
+	  <div class="game">
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="col-sm-12">    
+			  <h1 id="header">Snake</h1>
+			  <a href="https://twitter.com/bella_mrx" class="fa fa-twitter"><span class="link">@bella_mrx</span></a>
+			  <a href="https://github.com/BellaMrx" class="fa fa-github"><span class="link">BellaMrx</span></a>
 			</div>
+			<div class="col-sm-4">
+			  <select name="inputList" onchange="location = this.value;">
+				<option value="index.html">Normal</option>
+				<option value="SnakeFast.html">Fast</option>
+				<option value="SnakeSlow.html">Slow</option>
+				<option value="SnakeLSup.html">LevelUp/SpeedUp</option>
+			  </select>
+			</div>
+			<div class="col-sm-4">
+			  <button onClick="window.location.reload()">Replay</button>
+			</div>
+			<div class="col-sm-4">
+			  <div class="scoreBoard">Highscore: <span id="highscoreDisplay">0</span></div>
+			</div>
+			<div class="col-sm-12">
+			  <p class="info">Use arrow keys to play.</p>
+			</div>
+			<!-- #gameContainer is the main game board-->
+			<div id="gameContainer" class="box">
+			  <p class="displayGameOver"></p>
+			</div>
+			<!-- #scoreContainer contains the scores  -->
+			<div id="scoreContainer">
+			  <div class="scoreBoard">Food: <span id="pointsEarned">0</span></div>
+			  <div class="scoreBoard">Level: <span id="reachedLevel">1</span></div>
+			</div>
+			<!-- #onScreenControllers buttons for mobile screens -->
+			<div id="onScreenControllers">
+			  <button id="leftButton">&#11164;</button>
+			  <div>
+				<button id="upButton">&#11165;</button>
+				<button id="downButton">&#11167;</button>
+			  </div>
+			  <button id="rightButton">&#11166;</button>
+			</div>
+		  </div>
 		</div>
+	  </div>
+	  <script src="Scripts/scriptSnakeNormal.js"></script>
 	</body>
-	<script src="Scripts/scriptSnakeNormal.js"></script>
 </html>

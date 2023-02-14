@@ -29,7 +29,7 @@ h1 {
 }
 
 .fa:hover {
-    opacity: 0.7;
+	opacity: 0.7;
 	text-decoration: none;
 }
 
@@ -46,13 +46,11 @@ span {
 }
 
 
-
 /* board Gameplay Level Restart style */
 .col-sm-4 {
 	padding: 1vw;
 	display: inline-block;
 }
-
 
 .col-sm-4 > select {
 	border-radius: 0.5rem;
@@ -62,8 +60,7 @@ span {
 	font-size: 1rem;
 	font-family: Verdana, Helvetica, sans-serif;
 	display: inline-block;
-	cursor: pointer;
-	
+	cursor: pointer;	
 	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
@@ -83,7 +80,6 @@ span {
 	font-family: Verdana, Helvetica, sans-serif;
 	display: inline-block;
 	cursor: pointer;
-
 	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);	
@@ -112,7 +108,6 @@ because it is used in calculation in the jscript.js file */
 	border: 7px solid rgba(255, 255, 255, 0.24);
 }
 
-  
 .gameBoardPixel {
 /* width and height of .gameBoardPixel should 1/32 of the width and height of #gameContainer,
 because it is used in calculation in the jscript.js file */
@@ -135,34 +130,32 @@ because it is used in calculation in the jscript.js file */
 	-moz-animation: glowing 3000ms infinite;
 	-o-animation: glowing 3000ms infinite;
 	animation: glowing 3000ms infinite;
-  }
+}
   
-  @-webkit-keyframes glowing {
+@-webkit-keyframes glowing {
 	0% { background-color: rgb(232, 229, 223); -webkit-box-shadow: 0 0 3px rgb(232, 229, 223); }
 	50% { background-color: #fff; -webkit-box-shadow: 0 0 40px #fff; }
 	100% { background-color: aliceblue; -webkit-box-shadow: 0 0 3px aliceblue; }
-  }
+}
   
-  @-moz-keyframes glowing {
+@-moz-keyframes glowing {
 	0% { background-color: rgb(232, 229, 223); -moz-box-shadow: 0 0 3px rgb(232, 229, 223); }
 	50% { background-color: #fff; -moz-box-shadow: 0 0 40px #fff; }
 	100% { background-color: aliceblue; -moz-box-shadow: 0 0 3px aliceblue; }
-  }
+}
   
-  @-o-keyframes glowing {
+@-o-keyframes glowing {
 	0% { background-color: rgb(232, 229, 223); box-shadow: 0 0 3px rgb(232, 229, 223); }
 	50% { background-color: #fff; box-shadow: 0 0 40px #fff; }
 	100% { background-color: aliceblue; box-shadow: 0 0 3px aliceblue; }
-  }
+}
   
-  @keyframes glowing {
+@keyframes glowing {
 	0% { background-color: rgb(232, 229, 223); box-shadow: 0 0 3px rgb(232, 229, 223); }
 	50% { background-color: #fff; box-shadow: 0 0 40px #fff; }
 	100% { background-color: aliceblue; box-shadow: 0 0 3px aliceblue; }
-  }
+}
 	  
-
-
 
 /* Score style */
 #scoreContainer {
@@ -180,7 +173,6 @@ because it is used in calculation in the jscript.js file */
 	font-size: 1rem;
 	font-family: Verdana, Helvetica, sans-serif;
 	display: inline-block;
-
 	-webkit-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 	-moz-box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
 	box-shadow: 0rem 0rem 1.25rem 0.2rem rgba(0, 0, 0, 0.6);
@@ -193,8 +185,7 @@ because it is used in calculation in the jscript.js file */
 	background-color: aliceblue;
 	position: absolute;
 	margin-top: 13vw;
-	margin-left: 12vw;
-	
+	margin-left: 12vw;	
 	padding-top: 1vw;
 	padding-bottom: 1vw;
 	padding-left: 1vw;
@@ -207,7 +198,6 @@ because it is used in calculation in the jscript.js file */
 }
 
 
-
 /* Buttons hide #onScreenControllers on desktop  */
 #onScreenControllers {
 	display: none;
@@ -216,71 +206,71 @@ because it is used in calculation in the jscript.js file */
 /* MOBILE */
 @media only screen and (max-width: 1200px) {
 
-h1 {
-	font-size: 5vw;
-	font-family: Verdana, Helvetica, sans-serif;
-	color: #fff;
-}
+	h1 {
+		font-size: 5vw;
+		font-family: Verdana, Helvetica, sans-serif;
+		color: #fff;
+	}
 	
-#link {
-	font-size: 3vw;
-}
+	#link {
+		font-size: 3vw;
+	}
 	
-/* for Twitter, GitHub icon */
-.fa {
-	padding-left: 10px;
-	font-size: 3vw;
-	margin: 5px 2px;
-}
+	/* for Twitter, GitHub icon */
+	.fa {
+		padding-left: 10px;
+		font-size: 3vw;
+		margin: 5px 2px;
+	}
 
-#gameContainer {
-	width: 64vw;
-	height: 64vw;
-}
+	#gameContainer {
+		width: 64vw;
+		height: 64vw;
+	}
 
-.gameBoardPixel {
-	width: 2vw;
-    height: 2vw;
-}
+	.gameBoardPixel {
+		width: 2vw;
+		height: 2vw;
+	}
 
-#scoreContainer {
-	width: 64vw;
-}
+	#scoreContainer {
+		width: 64vw;
+	}
 
-#onScreenControllers {
-	width: 64vw;
-	height: 25vh;
-	margin: 2vw auto;	
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
+	#onScreenControllers {
+		width: 64vw;
+		height: 25vh;
+		margin: 2vw auto;	
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
 
-#onScreenControllers > div {
-    display: flex;
-    flex-direction: column;
-}
+	#onScreenControllers > div {
+		display: flex;
+		flex-direction: column;
+	}
 
-#onScreenControllers button {
-	border-radius: 1vw;
-	border: solid 0.5vw rgb(194, 225, 252);
-	color: aliceblue;
-	font-size: 6vw;
-	font-family: Verdana, Helvetica, sans-serif;
-	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
-	margin: 8vw;
-	box-shadow: 5px 10px 18px #000;
-}
+	#onScreenControllers button {
+		border-radius: 1vw;
+		border: solid 0.5vw rgb(194, 225, 252);
+		color: aliceblue;
+		font-size: 6vw;
+		font-family: Verdana, Helvetica, sans-serif;
+		background-image: radial-gradient(circle, #ee4b2b, #553c9a);
+		margin: 8vw;
+		box-shadow: 5px 10px 18px #000;
+	}
 
-#onScreenControllers button:focus {
-	outline: none;
-}
+	#onScreenControllers button:focus {
+		outline: none;
+	}
 
-#onScreenControllers button:active {
-	background-image: radial-gradient(circle, #ee4b2b, #553c9a);
-}
+	#onScreenControllers button:active {
+		background-image: radial-gradient(circle, #ee4b2b, #553c9a);
+	}
 
-.info {
-	display: none;
-}
+	.info {
+		display: none;
+	}
 }
